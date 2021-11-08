@@ -1,0 +1,38 @@
+/* LOGO  */
+.imgLogo {
+  width: 100%;
+  height: 30vh;
+}
+
+/* BANNER */
+.imgBanner {
+  width: 100%;
+  height: 30vh;
+}
+
+/* TEXTO ESLOGAN */
+.parrafoLogo {
+  text-align: center;
+}
+
+/* LINKS DEL NAV */
+.nav-item {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* NAV */
+.navbar-collapse {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* RESPONSIVE IMAGENES PARA MOBILE */
+@media (max-width: 576px) {
+  .imgLogo {
+    height: 20vh;
+  }
+  .imgBanner {
+    height: 20vh;
+  }
+}
