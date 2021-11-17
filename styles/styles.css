@@ -1,12 +1,32 @@
+/* I N D E X */
+
+/* HEADER */
+.containerMain {
+  display: grid;
+  grid-template-areas: "logo banner";
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+}
+
 /* LOGO  */
+.containerImg {
+  text-align: center;
+  grid-area: logo;
+}
+
 .imgLogo {
-  width: 100%;
+  width: 80%;
   height: 30vh;
 }
 
 /* BANNER */
+.containerBanner {
+  text-align: center;
+  grid-area: banner;
+}
+
 .imgBanner {
-  width: 100%;
+  width: 80%;
   height: 30vh;
 }
 
@@ -17,15 +37,113 @@
 
 /* LINKS DEL NAV */
 .nav-item {
-  margin-left: 20px;
   margin-right: 20px;
 }
 
 /* NAV */
+.navbar {
+  display: flex;
+  align-items: flex-start;
+  grid-area: navI;
+}
+
 .navbar-collapse {
   display: flex;
   justify-content: space-around;
 }
+
+/* BANNER VERTICAL */
+.containerBannerVertical {
+  text-align: center;
+  grid-area: imgI;
+}
+
+.bannerVertical {
+  width: 80%;
+}
+
+/* GRID INDEX*/
+.containerIndex {
+  display: grid;
+  grid-template-areas:
+    "imgI navI"
+    "imgI textI"
+    "imgI btnI";
+  grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: 2fr 3fr 3fr;
+}
+
+/* PARRAFO */
+.textIndex {
+  grid-area: textI;
+  width: 50%;
+  text-align: center;
+  justify-self: center;
+}
+
+/* BOTON */
+.btnIndex {
+  grid-area: btnI;
+  justify-self: center;
+}
+
+.btnIndex button {
+  border-radius: 10px;
+  width: 250px;
+  height: 50px;
+}
+
+/* R E G A L A */
+
+/* TITULO */
+.titleRegala{
+  grid-area: titleR;
+  margin-left: 120px;
+}
+
+/* GIFT */
+
+
+.giftUno{
+  grid-area: giftR;
+  text-align: center;
+  align-self: center;
+  background-color: gray;
+  width: 50%;
+  height: 50%;
+}
+
+/* BANNER REGALA */
+.bannerRegala{
+  grid-area: imgR;
+}
+
+/* NAVBAR REGALA */
+.navbarRegala{
+  grid-area: navR;
+}
+
+/* PARRAFO REGALA */
+.textRegala{
+  grid-area: parrafoR;
+  justify-self: center;
+}
+
+/* GRID REGALA */
+.containerRegala {
+  display: grid;
+  grid-template-areas:
+    "imgR navR"
+    "imgR titleR"
+    "imgR giftR"
+    "imgR parrafoR";
+  grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+
+
+
 
 /* RESPONSIVE IMAGENES PARA MOBILE */
 @media (max-width: 576px) {
@@ -34,5 +152,10 @@
   }
   .imgBanner {
     height: 20vh;
+    width: 100%;
+  }
+  .bannerVertical {
+    width: 80%;
+    height: 60vh;
   }
 }
