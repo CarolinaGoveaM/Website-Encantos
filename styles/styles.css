@@ -1,3 +1,9 @@
+/* FORMATOS */
+body{
+  color: #4F4949;
+  background-color: #EDEBE5;
+}
+
 /* I N D E X */
 
 /* HEADER */
@@ -141,9 +147,59 @@
   grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
 }
 
+/* -------------------------PRODUCTOS---------------------- */
+.divLateral{
+  position: sticky;
+  top: 130px;
+  z-index: 999;
+  height: 65vh;
+  border: 2px solid black;
+  height: max-content;
+  margin: 5px auto;
+}
 
+.card{
+  width: 16vw;
+}
 
+.card img{
+  margin-top: 20px;
+}
 
+.productos{
+  margin-top: 15px;
+}
+
+.subcategorias{
+  height: 60vh;
+  width: 20vw;
+}
+
+.subcategorias button{
+
+  margin: 20px 20px;
+  padding: 0;
+  border: black solid 2px;
+  height: 60px;
+	cursor: pointer;
+}
+
+.subcategorias button:hover{
+  background-color: darksalmon;
+  color: black;
+}
+
+.categoriaElegida{
+  height: 8vh;
+  margin: 5px;
+  padding: 9px;
+}
+
+.categoriaElegida h3{
+  width: 22vw;
+  height: 5vh;
+  margin: 5px;
+}
 
 /* RESPONSIVE IMAGENES PARA MOBILE */
 @media (max-width: 576px) {
@@ -157,5 +213,55 @@
   .bannerVertical {
     width: 80%;
     height: 60vh;
+  }
+  
+  .subcategorias{
+    flex-wrap: wrap;  
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 23vh;
+    width: 83vw;
+  }
+  
+  .divLateral{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    top: 5px;
+    
+  }
+  
+  .subcategorias button{
+    width: 35vw;
+    padding: 0;
+  }
+
+  .card{
+    width: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .subcategorias{
+    flex-wrap: wrap;  
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 16vh;
+    width: 85vw;
+  }
+
+  .divLateral{
+    display: flex;
+    justify-content: center;
+    height: 210px;
+    top: 5px;
+    
+  }
+  
+  .subcategorias button{
+    width: 35vw;
+    padding: 5px;
   }
 }
