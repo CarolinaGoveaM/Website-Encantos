@@ -46,6 +46,10 @@ body{
   margin: 5px auto;
 }
 
+.card{
+  width: 16vw;
+}
+
 .card img{
   margin-top: 20px;
 }
@@ -62,7 +66,7 @@ body{
 .subcategorias button{
 
   margin: 20px 20px;
-  padding: 15px;
+  padding: 0;
   border: black solid 2px;
   height: 60px;
 	cursor: pointer;
@@ -95,21 +99,51 @@ body{
   }
   .subcategorias{
     flex-wrap: wrap;  
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 23vh;
+    width: 83vw;
+  }
+  
+  .divLateral{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    top: 5px;
+    
+  }
+  
+  .subcategorias button{
+    width: 35vw;
+    padding: 0;
   }
 
-  .divLateral{
-    height: 200px;
+  .card{
+    width: auto !important;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 768px){
+  .subcategorias{
+    flex-wrap: wrap;  
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 16vh;
+    width: 85vw;
+  }
+
   .divLateral{
-    height: 600px;
+    display: flex;
+    justify-content: center;
+    height: 210px;
+    top: 5px;
+    
   }
-
-  /* .subcategorias{
-    width: 90vh;
+  
+  .subcategorias button{
+    width: 35vw;
+    padding: 5px;
   }
- */
-
 }
