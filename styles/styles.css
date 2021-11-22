@@ -1,3 +1,10 @@
+/* FORMATOS */
+body{
+  color: #4F4949;
+  background-color: #EDEBE5;
+}
+
+
 /* LOGO  */
 .imgLogo {
   width: 100%;
@@ -27,6 +34,57 @@
   justify-content: space-around;
 }
 
+
+/* PRODUCTOS */
+.divLateral{
+  position: sticky;
+  top: 130px;
+  z-index: 999;
+  height: 65vh;
+  border: 2px solid black;
+  height: max-content;
+  margin: 5px auto;
+}
+
+.card img{
+  margin-top: 20px;
+}
+
+.productos{
+  margin-top: 15px;
+}
+
+.subcategorias{
+  height: 60vh;
+  width: 20vw;
+}
+
+.subcategorias button{
+
+  margin: 20px 20px;
+  padding: 15px;
+  border: black solid 2px;
+  height: 60px;
+	cursor: pointer;
+}
+
+.subcategorias button:hover{
+  background-color: darksalmon;
+  color: black;
+}
+
+.categoriaElegida{
+  height: 8vh;
+  margin: 5px;
+  padding: 9px;
+}
+
+.categoriaElegida h3{
+  width: 22vw;
+  height: 5vh;
+  margin: 5px;
+}
+
 /* RESPONSIVE IMAGENES PARA MOBILE */
 @media (max-width: 576px) {
   .imgLogo {
@@ -35,4 +93,23 @@
   .imgBanner {
     height: 20vh;
   }
+  .subcategorias{
+    flex-wrap: wrap;  
+  }
+
+  .divLateral{
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .divLateral{
+    height: 600px;
+  }
+
+  /* .subcategorias{
+    width: 90vh;
+  }
+ */
+
 }
