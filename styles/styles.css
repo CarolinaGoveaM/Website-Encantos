@@ -201,6 +201,51 @@ body{
   margin: 5px;
 }
 
+/* -------------------------MAYORISTAS---------------------- */
+
+
+.bannerMayoristas{
+  grid-area: imgM;
+}
+
+.navbarMayoristas{
+  grid-area: navM;
+}
+
+.titleMayoristas{
+  grid-area: titleM;
+}
+
+.mayoristasCiudades{
+  grid-area: ciudadesM
+}
+
+.titleMayoristas2{
+  grid-area: title2M;
+}
+
+.containerMayoristas {
+  display: grid;
+  grid-template-areas:
+    "imgM navM"
+    "imgM titleM"
+    "imgM ciudadesM"
+    "imgM title2M";
+  grid-template-columns: 1.5fr 4fr;
+  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+.mayoristasCiudades a{
+  text-decoration: none;
+}
+
+.mayoristasCiudades button{
+  width: 70vw;
+  height: 5vh;
+  /* border: 1px solid; */
+  border-radius: 5px;
+}
+
 /* RESPONSIVE IMAGENES PARA MOBILE */
 @media (max-width: 576px) {
   .imgLogo {
