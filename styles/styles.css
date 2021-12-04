@@ -1,38 +1,58 @@
 /* FORMATOS */
 body{
-  color: #4F4949;
+  font-family: 'Roboto', sans-serif;
   background-color: #EDEBE5;
 }
 
-/* I N D E X */
+/* -------------------------INDEX---------------------- */
 
 /* HEADER */
+.btnBuscar input{
+  border: 1px solid  #0ebdb7;
+  border-radius: 20px;
+}
+
+.btnBuscar button{
+  border-radius: 20px;
+  background-color: white;
+}
+
+.itemsHeader a{
+  color: #0ebdb7 !important;
+  font-weight: bold;
+}
+
+/* MAIN */
 .containerMain {
   display: grid;
   grid-template-areas: "logo banner";
   grid-template-columns: 2fr 5fr;
-  align-items: center;
+  align-items: start;
 }
 
 /* LOGO  */
 .containerImg {
   text-align: center;
   grid-area: logo;
+  align-self: center;
 }
 
 .imgLogo {
-  width: 80%;
+  width: 70%;
   height: 30vh;
 }
 
 /* BANNER */
 .containerBanner {
+  background-color: #0ebdb7;
   text-align: center;
+  width: 100%;
+  height: 90%;
   grid-area: banner;
 }
 
 .imgBanner {
-  width: 80%;
+  width: 100%;
   height: 30vh;
 }
 
@@ -42,41 +62,38 @@ body{
 }
 
 /* LINKS DEL NAV */
-.nav-item {
+.menuNavItem {
   margin-right: 20px;
 }
 
+.menuNavItem a{
+  color: #0ebdb7 !important;
+  font-weight: bold;
+}
+
 /* NAV */
-.navbar {
+.menuNav {
   display: flex;
   align-items: flex-start;
   grid-area: navI;
+  margin-bottom: 25px;
 }
 
-.navbar-collapse {
+.menuNavItems {
   display: flex;
   justify-content: space-around;
 }
 
-/* BANNER VERTICAL */
-.containerBannerVertical {
-  text-align: center;
-  grid-area: imgI;
-}
-
-.bannerVertical {
-  width: 80%;
-}
 
 /* GRID INDEX*/
 .containerIndex {
   display: grid;
   grid-template-areas:
-    "imgI navI"
-    "imgI textI"
-    "imgI btnI";
+    ".. navI"
+    "textI textI"
+    "btnI btnI";
   grid-template-columns: 1.5fr 4fr;
-  grid-template-rows: 2fr 3fr 3fr;
+  grid-template-rows: 2fr 3fr 2fr;
 }
 
 /* PARRAFO */
@@ -97,6 +114,10 @@ body{
   border-radius: 10px;
   width: 250px;
   height: 50px;
+  border: 1px solid #0ebdb7;
+  background-color: #0ebdb7;
+  color: white;
+  font-weight: bold;
 }
 
 /* R E G A L A */
@@ -104,11 +125,13 @@ body{
 /* TITULO */
 .titleRegala{
   grid-area: titleR;
-  margin-left: 120px;
+}
+
+.titleRegala h1{
+  font-weight: bold;
 }
 
 /* GIFT */
-
 
 .giftUno{
   grid-area: giftR;
@@ -116,12 +139,7 @@ body{
   align-self: center;
   background-color: gray;
   width: 50%;
-  height: 50%;
-}
-
-/* BANNER REGALA */
-.bannerRegala{
-  grid-area: imgR;
+  height: 90%;
 }
 
 /* NAVBAR REGALA */
@@ -139,10 +157,10 @@ body{
 .containerRegala {
   display: grid;
   grid-template-areas:
-    "imgR navR"
-    "imgR titleR"
-    "imgR giftR"
-    "imgR parrafoR";
+    ".. navR"
+    ".. titleR"
+    ".. giftR"
+    ".. parrafoR";
   grid-template-columns: 1.5fr 4fr;
   grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
 }
@@ -249,15 +267,11 @@ body{
 /* RESPONSIVE IMAGENES PARA MOBILE */
 @media (max-width: 576px) {
   .imgLogo {
-    height: 20vh;
+    height: 10vh;
   }
   .imgBanner {
-    height: 20vh;
+    height: 10vh;
     width: 100%;
-  }
-  .bannerVertical {
-    width: 80%;
-    height: 60vh;
   }
   
   .subcategorias{
@@ -287,7 +301,7 @@ body{
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 577px) and (max-width: 768px){
   .subcategorias{
     flex-wrap: wrap;  
     display: grid !important;
@@ -308,5 +322,23 @@ body{
   .subcategorias button{
     width: 35vw;
     padding: 5px;
+  }
+
+  .imgLogo {
+    height: 20vh;
+  }
+  .imgBanner {
+    height: 20vh;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+  .imgLogo {
+    height: 20vh;
+  }
+  .imgBanner {
+    height: 20vh;
+    width: 100%;
   }
 }
