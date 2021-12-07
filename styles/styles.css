@@ -166,14 +166,50 @@ body{
 }
 
 /* -------------------------PRODUCTOS---------------------- */
-.divLateral{
+
+.containerProductos{
+  display: flex;  
+}
+
+.navbarProductos{
+  grid-area: navP;
+}
+
+.gridProductos{
+  grid-area: gridProductos;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(150, auto);
+}
+
+.subcategorias{
+  height: 60vh;
+  width: 20vw;
   position: sticky;
   top: 130px;
   z-index: 999;
-  height: 65vh;
   border: 2px solid black;
   height: max-content;
   margin: 5px auto;
+  grid-area: subcategorias;
+}
+
+.categoriaElegida{
+  height: 8vh;
+  margin: 5px;
+  padding: 9px;
+  grid-area: categoriaElegida;
+}
+
+.gridP{
+  display: grid;
+  grid-template-areas:
+    "navP"
+    "categoriaElegida"
+    "gridProductos"
+    "gridProductos";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.02fr 0.04fr 1fr;
 }
 
 .card{
@@ -184,17 +220,7 @@ body{
   margin-top: 20px;
 }
 
-.productos{
-  margin-top: 15px;
-}
-
-.subcategorias{
-  height: 60vh;
-  width: 20vw;
-}
-
 .subcategorias button{
-
   margin: 20px 20px;
   padding: 0;
   border: black solid 2px;
@@ -205,12 +231,6 @@ body{
 .subcategorias button:hover{
   background-color: darksalmon;
   color: black;
-}
-
-.categoriaElegida{
-  height: 8vh;
-  margin: 5px;
-  padding: 9px;
 }
 
 .categoriaElegida h3{
@@ -228,40 +248,57 @@ body{
 
 .navbarMayoristas{
   grid-area: navM;
+  justify-self: center;
 }
 
 .titleMayoristas{
   grid-area: titleM;
+  justify-self: center;
+  max-width: max-content;
+  text-align: center;
+  align-self: center;
+  margin: 10px;
 }
 
 .mayoristasCiudades{
-  grid-area: ciudadesM
+  grid-area: ciudadesM;
+  justify-self: center;
 }
 
 .titleMayoristas2{
   grid-area: title2M;
+  justify-self: center;
+  align-self: center;
+
 }
 
 .containerMayoristas {
   display: grid;
   grid-template-areas:
-    "imgM navM"
-    "imgM titleM"
-    "imgM ciudadesM"
-    "imgM title2M";
-  grid-template-columns: 1.5fr 4fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+    "navM"
+    "titleM"
+    "ciudadesM"
+    "title2M";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 2fr 0.3fr;
 }
 
 .mayoristasCiudades a{
   text-decoration: none;
+  margin: 5px;
 }
 
 .mayoristasCiudades button{
-  width: 70vw;
-  height: 5vh;
+  width: 60vw;
+  height: 8vh;
   /* border: 1px solid; */
   border-radius: 5px;
+  padding: 10px;
+}
+
+.spanData{
+  width: 65%;
+  text-align: left;
 }
 
 /* RESPONSIVE IMAGENES PARA MOBILE */
@@ -278,27 +315,35 @@ body{
     flex-wrap: wrap;  
     display: grid !important;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
     height: 23vh;
     width: 83vw;
   }
   
-  .divLateral{
+  /* .divLateral{
     display: flex;
     justify-content: center;
     height: 200px;
     top: 5px;
     
-  }
+  } */
   
   .subcategorias button{
     width: 35vw;
     padding: 0;
   }
+  
+  .gridProductos{
+    grid-template-columns: 1fr;
+  }
 
   .card{
     width: auto !important;
   }
+
+  .mayoristasCiudades button {
+    width: 90vw;
+    height: 12vh;
+  }  
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px){
@@ -311,13 +356,13 @@ body{
     width: 85vw;
   }
 
-  .divLateral{
+  /* .divLateral{
     display: flex;
     justify-content: center;
     height: 210px;
     top: 5px;
     
-  }
+  } */
   
   .subcategorias button{
     width: 35vw;
@@ -331,6 +376,11 @@ body{
     height: 20vh;
     width: 100%;
   }
+
+  .mayoristasCiudades button {
+    width: 70vw;
+    height: 12vh;
+  }  
 }
 
 @media screen and (min-width: 769px) and (max-width: 992px){
