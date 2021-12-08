@@ -202,6 +202,7 @@ body{
 }
 
 .gridP{
+  width: 72vw;
   display: grid;
   grid-template-areas:
     "navP"
@@ -218,6 +219,12 @@ body{
 
 .card img{
   margin-top: 20px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
 }
 
 .subcategorias button{
@@ -240,15 +247,18 @@ body{
 }
 
 /* -------------------------MAYORISTAS---------------------- */
-
-
 .bannerMayoristas{
   grid-area: imgM;
 }
 
 .navbarMayoristas{
   grid-area: navM;
-  justify-self: center;
+  justify-self: end;
+}
+
+.navMayoristas{
+  width: 72vw;
+  justify-self: end;
 }
 
 .titleMayoristas{
