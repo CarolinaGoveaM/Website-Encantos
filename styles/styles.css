@@ -279,7 +279,6 @@ body{
   grid-area: title2M;
   justify-self: center;
   align-self: center;
-
 }
 
 .containerMayoristas {
@@ -309,6 +308,66 @@ body{
 .spanData{
   width: 65%;
   text-align: left;
+}
+
+
+/* PREGUNTAS FRECUENTES */
+.navbarPreguntas{
+  grid-area: navPreg;
+  justify-self: end;
+}
+
+.navPreguntas{
+  width: 72vw;
+  justify-self: end;
+}
+
+.titlePreguntas{
+  grid-area: titlePreg;
+  justify-self: center;
+  max-width: max-content;
+  text-align: center;
+  align-self: center;
+  margin: 10px;
+}
+
+.titlePreguntas2{
+  grid-area: titlePreg2;
+  justify-self: center;
+  align-self: center;
+  font-size: 1.5rem !important;
+  width: 70vw;
+  margin: 5vw;
+}
+
+.preguntas{
+  grid-area: preguntas;
+  justify-self: self-start;
+  align-self: center;
+  margin: 2vh 34vw;
+}
+
+summary{
+  background-color: #C4C4C4;
+  border-radius: 10px;
+}
+
+details{
+  margin: 15px 0;
+  background-color: #22BCB5;
+  border-radius: 10px;
+}
+
+
+.containerPreguntas {
+  display: grid;
+  grid-template-areas:
+    "navPreg"
+    "titlePreg"
+    "preguntas"
+    "titlePreg2";
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.2fr 2fr 0.2fr;
 }
 
 /* RESPONSIVE IMAGENES PARA MOBILE */
