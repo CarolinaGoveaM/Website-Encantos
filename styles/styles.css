@@ -190,15 +190,19 @@ body{
   z-index: 999;
   border: 2px solid black;
   height: max-content;
-  margin: 5px auto;
+  margin: 12vh auto;
   grid-area: subcategorias;
 }
 
 .categoriaElegida{
   height: 8vh;
-  margin: 5px;
+  margin: auto;
   padding: 9px;
   grid-area: categoriaElegida;
+}
+
+.categoriaElegida h2{
+  font-weight: bold;  
 }
 
 .gridP{
@@ -270,6 +274,10 @@ body{
   margin: 10px;
 }
 
+.titleMayoristas h1{
+  font-weight: bold;
+}
+
 .mayoristasCiudades{
   grid-area: ciudadesM;
   justify-self: center;
@@ -281,6 +289,10 @@ body{
   align-self: center;
 }
 
+.titleMayoristas2 h3{
+  font-weight: bold;
+}
+
 .containerMayoristas {
   display: grid;
   grid-template-areas:
@@ -289,7 +301,7 @@ body{
     "ciudadesM"
     "title2M";
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.2fr 2fr 0.3fr;
+  grid-template-rows: 0.02fr 0.2fr 2fr 0.3fr;
 }
 
 .mayoristasCiudades a{
@@ -329,6 +341,7 @@ body{
   text-align: center;
   align-self: center;
   margin: 10px;
+  font-weight: bold;
 }
 
 .titlePreguntas2{
@@ -338,6 +351,7 @@ body{
   font-size: 1.5rem !important;
   width: 70vw;
   margin: 5vw;
+  font-weight: bold;
 }
 
 .preguntas{
