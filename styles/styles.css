@@ -1,7 +1,7 @@
 /* FORMATOS */
 body{
   font-family: 'Roboto', sans-serif;
-  background-color: #EDEBE5;
+  background-color: #edebe5;
 }
 
 .footer{
@@ -31,16 +31,22 @@ body{
 .btnBuscar input{
   border: 1px solid  #0ebdb7;
   border-radius: 20px;
+  background-color: #FFFEEC;
 }
 
 .btnBuscar button{
   border-radius: 20px;
-  background-color: white;
+  background-color: #FFFEEC;
 }
 
 .itemsHeader a{
   color: #0ebdb7 !important;
   font-weight: bold;
+}
+
+.itemsHeader a:hover{
+  text-decoration: underline;
+  background-color: #FFFEEC;
 }
 
 /* MAIN */
@@ -73,14 +79,16 @@ body{
 }
 
 .imgBanner {
+  /* background-size: 100px 30px; */
   width: 100%;
   height: 30vh;
+
 }
 
 /* TEXTO ESLOGAN */
-.parrafoLogo {
+/* .parrafoLogo {
   text-align: center;
-}
+} */
 
 /* LINKS DEL NAV */
 .menuNavItem {
@@ -90,6 +98,11 @@ body{
 .menuNavItem a{
   color: #0ebdb7 !important;
   font-weight: bold;
+}
+
+.menuNavItem a:hover{
+  text-decoration: underline;
+  background-color: #edebe5;
 }
 
 /* NAV */
@@ -103,6 +116,7 @@ body{
 .menuNavItems {
   display: flex;
   justify-content: space-around;
+  background-color: #FFFEEC;
 }
 
 
@@ -111,9 +125,9 @@ body{
   display: grid;
   grid-template-areas:
     ".. navI"
-    "textI textI"
-    "btnI btnI";
-  grid-template-columns: 1.5fr 4fr;
+    ".. textI"
+    ".. btnI";
+  grid-template-columns: 1.6fr 4fr;
   grid-template-rows: 2fr 3fr 2fr;
 }
 
@@ -123,12 +137,16 @@ body{
   width: 50%;
   text-align: center;
   justify-self: center;
+  background-color: #FFFEEC;
+  width: 100%;
+  height: 100%;
 }
 
 /* BOTON */
 .btnIndex {
   grid-area: btnI;
   justify-self: center;
+  align-self: center;
 }
 
 .btnIndex button {
@@ -141,7 +159,11 @@ body{
   font-weight: bold;
 }
 
-/* R E G A L A */
+.btnIndex button:hover{
+  transform: scale(1.1, 1.1);
+}
+
+/* -------------------------REGALA---------------------- */
 
 /* TITULO */
 .titleRegala{
@@ -158,7 +180,7 @@ body{
   grid-area: giftR;
   text-align: center;
   align-self: center;
-  background-color: gray;
+  background-color: #FFFEEC;
   width: 50%;
   height: 90%;
 }
@@ -182,7 +204,7 @@ body{
     ".. titleR"
     ".. giftR"
     ".. parrafoR";
-  grid-template-columns: 1.5fr 4fr;
+  grid-template-columns: 1.6fr 4fr;
   grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
 }
 
