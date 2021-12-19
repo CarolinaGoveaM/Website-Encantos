@@ -496,6 +496,51 @@ details[open]{
   .footer button{
     width: 35vw;
   }
+
+  .containerHeader{
+    display: grid !important;
+    grid-template-areas: 
+    ".. form" 
+    ".. items";
+  }
+
+  .btnBuscar{
+    grid-area: form;
+  }
+
+  .navPrincipal{
+    grid-area: items;
+  }
+
+  .itemsHeader{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .itemsHeader a{
+    margin-right: 10px;
+  }
+
+  .containerIndex {
+    display: grid;
+    grid-template-areas:
+      "navI"
+      "textI"
+      "btnI";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .containerRegala {
+    display: grid;
+    grid-template-areas:
+      "navR"
+      "titleR"
+      "giftR"
+      "parrafoR";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px){
@@ -541,6 +586,51 @@ details[open]{
 
   .footer button{
     width: 35vw;
+  }
+
+  .containerHeader{
+    display: grid !important;
+    grid-template-areas: 
+    ".. form" 
+    ".. items";
+  }
+
+  .btnBuscar{
+    grid-area: form;
+  }
+
+  .navPrincipal{
+    grid-area: items;
+  }
+
+  .itemsHeader{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .itemsHeader a{
+    margin-right: 10px;
+  }
+
+  .containerIndex {
+    display: grid;
+    grid-template-areas:
+      "navI"
+      "textI"
+      "btnI";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .containerRegala {
+    display: grid;
+    grid-template-areas:
+      "navR"
+      "titleR"
+      "giftR"
+      "parrafoR";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
