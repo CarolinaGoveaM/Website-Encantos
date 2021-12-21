@@ -119,6 +119,11 @@ body{
   background-color: #FFFEEC;
 }
 
+.navbar-menu{
+  width: 71.1vw;
+  justify-self: end;
+}
+
 
 /* GRID INDEX*/
 .containerIndex {
@@ -211,7 +216,8 @@ body{
 /* -------------------------PRODUCTOS---------------------- */
 
 .containerProductos{
-  display: flex;  
+  display: flex;
+  justify-content: space-between;
 }
 
 .navbarProductos{
@@ -221,9 +227,8 @@ body{
 .gridProductos{
   grid-area: gridProductos;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 5px;
-  /* grid-auto-rows: minmax(150px, auto); */
+  grid-template-columns: 1fr 1fr;
 }
 
 .subcategorias{
@@ -232,7 +237,6 @@ body{
   position: sticky;
   top: 130px;
   z-index: 999;
-  /* border: 2px solid black; */
   height: max-content;
   margin: 12vh 2vw;
   grid-area: subcategorias;
@@ -246,11 +250,12 @@ body{
 }
 
 .categoriaElegida h2{
-  font-weight: bold;  
+  color: #22BCB5;
+  font-weight: bolder;
 }
 
 .gridP{
-  width: 72vw;
+  width: 78vw;
   display: grid;
   grid-template-areas:
     "navP"
@@ -258,11 +263,11 @@ body{
     "gridProductos"
     "gridProductos";
   grid-template-columns: 1fr;
-  grid-template-rows: 0.02fr 0.04fr 1fr;
 }
 
 .card{
-  width: 15vw !important;
+  border-radius: 12px;
+  width: 38vw;
 }
 
 .card img{
@@ -271,25 +276,19 @@ body{
 
 .card-img-top {
   width: 100%;
-  height: 15vw;
   object-fit: cover;
+  height: 60vh;
 }
 
 .subcategorias button{
   margin: 20px 20px;
   padding: 0;
-  /* border: black solid 2px; */
   height: 60px;
 	cursor: pointer;
   color: #55C8C1;
   font-weight: 500;
   font-size: 18px;
 }
-
-/* .subcategorias button:hover{
-  color: #55C8C1;
-  text-decoration: underline;
-} */
 
 .subcategorias button:focus{
   box-shadow: none;
@@ -302,6 +301,10 @@ body{
   margin: 5px;
 }
 
+.deco, .disfraces, .linea-bebe, .linea-juguetes{
+  grid-template-columns: 1fr 1fr;
+}
+
 /* -------------------------MAYORISTAS---------------------- */
 .bannerMayoristas{
   grid-area: imgM;
@@ -309,11 +312,6 @@ body{
 
 .navbarMayoristas{
   grid-area: navM;
-  justify-self: end;
-}
-
-.navMayoristas{
-  width: 72vw;
   justify-self: end;
 }
 
@@ -327,7 +325,8 @@ body{
 }
 
 .titleMayoristas h1{
-  font-weight: bold;
+  color: #22BCB5;
+  font-weight: bolder;
 }
 
 .mayoristasCiudades{
@@ -339,10 +338,14 @@ body{
   grid-area: title2M;
   justify-self: center;
   align-self: center;
+  color: #22BCB5;
+  font-weight: bolder;
 }
 
 .titleMayoristas2 h3{
   font-weight: bold;
+  color: #22BCB5;
+  font-weight: bolder;
 }
 
 .containerMayoristas {
@@ -353,7 +356,6 @@ body{
     "ciudadesM"
     "title2M";
   grid-template-columns: 1fr;
-  grid-template-rows: 0.02fr 0.2fr 2fr 0.3fr;
 }
 
 .mayoristasCiudades a{
@@ -364,9 +366,11 @@ body{
 .mayoristasCiudades button{
   width: 60vw;
   height: 8vh;
-  /* border: 1px solid; */
   border-radius: 5px;
   padding: 10px;
+  background-color: #FFFEEC;
+  color: #55C8C1;
+  font-weight: bold;
 }
 
 .spanData{
@@ -381,11 +385,6 @@ body{
   justify-self: end;
 }
 
-.navPreguntas{
-  width: 72vw;
-  justify-self: end;
-}
-
 .titlePreguntas{
   grid-area: titlePreg;
   justify-self: center;
@@ -393,7 +392,8 @@ body{
   text-align: center;
   align-self: center;
   margin: 10px;
-  font-weight: bold;
+  color: #22BCB5;
+  font-weight: bolder;
 }
 
 .titlePreguntas2{
@@ -403,7 +403,8 @@ body{
   font-size: 1.5rem !important;
   width: 70vw;
   margin: 5vw;
-  font-weight: bold;
+  color: #22BCB5;
+  font-weight: bolder;
 }
 
 .preguntas{
@@ -414,7 +415,8 @@ body{
 }
 
 summary{
-  background-color: #C4C4C4;
+  background-color: #22BCB5;
+  ;
   border-radius: 10px;
   padding: 15px;
   width: 67vw;
@@ -427,7 +429,7 @@ summary[open]{
 
 details{
   margin: 15px 0;
-  background-color: #22BCB5;
+  background-color: #FFFFFF;
   border-radius: 10px;
   width: 67vw;
 }
@@ -447,7 +449,6 @@ details[open]{
     "preguntas"
     "titlePreg2";
   grid-template-columns: 1fr;
-  grid-template-rows: 0.2fr 0.2fr 2fr 0.2fr;
 }
 
 /* RESPONSIVE IMAGENES PARA MOBILE */
@@ -480,12 +481,8 @@ details[open]{
     width: 60vw !important;
   }
 
-  .card-img-top {
-    height: 60vw;    
-  }
-
-  .gridP{
-    margin: auto;
+  /* .deco .card-img-top, .disfraces .card-img-top, .linea-bebe .card-img-top, .linea-juguetes  */.card-img-top {
+    height: 30vh;
   }
 
   .mayoristasCiudades button {
@@ -551,11 +548,11 @@ details[open]{
   }
   
   .gridProductos{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   .card {
-    width: 30vw !important;
+    width: 60vw !important;
   }
 
   .card-img-top {
@@ -648,15 +645,11 @@ details[open]{
   }
 
   .card {
-    width: 30vw !important;
+    width: 30vw;
   }
 
-  .card-img-top {
-    height: 30vw;    
-  }
-
-  .gridP{
-    margin: auto;
+  /* .deco .card-img-top, .disfraces .card-img-top, .linea-bebe .card-img-top, .linea-juguetes  */.card-img-top {
+    height: 40vh;    
   }
 
   .footer button{

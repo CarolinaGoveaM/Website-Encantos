@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" mx-3 content="width=device-width, initial-scale=1.0">
+
+    <!-- LINK BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../styles/styles.css">
+    
+    <title>Encantos|Productos|Disfraces</title>
+</head>
+<body>
+
+    <header class="headerNav d-flex justify-content-end">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid containerHeader ">        
+                <form class="d-flex btnBuscar">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                </form>
+                
+                <div class="navbar navbar-expand-lg navbar-expand-md navPrincipal" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 itemsHeader">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../sermayorista.html">Quieres ser mayorista?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1">Carrito</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="containerMain">
+            <div class="containerImg">
+                <img src="../../assets/img/logopng.png" alt="logo encantos" class="imgLogo">
+                <!-- <p class="m-auto parrafoLogo">Eslogan</p> -->
+            </div>
+            <div class="containerBanner">
+                <img src="../../assets/img/banner.jpg" alt="banner" class="imgBanner">
+            </div>
+        </div>
+    </div>
+
+    <main class="containerProductos">
+
+        <!-- Seccion lateral -->
+        <div class="subcategorias container-fluid d-flex flex-column justify-content-around align-items-center">
+            <a href="./deco.html"><button class="btn container mx-3 text-center">Deco</button></a>
+            <a href="./disfraces.html"><button class="btn container mx-3 text-center">Disfraces</button></a>
+            <a href="./linea-bebe.html"><button class="btn container mx-3 text-center">Línea de bebe</button></a>
+            <a href="./linea-juguetes.html"><button class="btn container mx-3 text-center">Línea de juguetes</button></a>
+        </div>
+
+        <div class="gridP">
+            <nav class="navbar navbar-menu navbar-expand-lg navbar-light navbarProductos">
+                <div class="container-fluid ">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menuNavItems" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item menuNavItem">
+                                <a class="nav-link"  href="../../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item menuNavItem">
+                                <a class="nav-link active" aria-current="page" href="../productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item menuNavItem">
+                                <a class="nav-link" href="../dondecomprar.html">Donde Comprar</a>
+                            </li>
+                            <li class="nav-item menuNavItem">
+                                <a class="nav-link" href="../regala.html">Regalá Encantos</a>
+                            </li>
+                            <li class="nav-item menuNavItem">
+                                <a class="nav-link" href="../preguntas.html" tabindex="-1">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>        
+    
+            <div class="categoriaElegida container-fluid d-flex justify-content-start">
+                <h2>Disfraces</h2>
+            </div>
+    
+            <div class="container-fluid gridProductos disfraces">
+                
+                <div class="card container-fluid my-3">
+                    <img src="../../assets/img/Productos/Disfraces/AlitasDragon.jpg" class="card-img-top ratio ratio-4x3" alt="Alitas de dragón">                    
+                    <div class="card-body">
+                        <h5 class="card-title">Alitas de dragón</h5>
+                        <p class="card-text">Acolchonadas. Con tiras elásticas para sujetar.</p>
+                        <p class="card-text">$1700</p>
+                    </div>
+                </div>
+                
+                <div class="card container-fluid my-3">
+                    <img src="../../assets/img/Productos/Disfraces/AlitasMariposa1.jpg" class="card-img-top .ratio ratio-4x3" alt="Alitas de mariposa">
+                    <div class="card-body">
+                        <h5 class="card-title">Alitas de mariposa</h5>
+                        <p class="card-text">Acolchonadas. Con tiras elásticas para sujetar. Trae una vincha de flores a tono.</p>
+                        <p class="card-text">$1700</p>
+                    </div>
+                </div>
+                
+                <div class="card container-fluid my-3">
+                    <img src="../../assets/img/Productos/Disfraces/Antifaz-Muñequeras1.jpeg" class="card-img-top .ratio ratio-4x3" alt="Antifaz y muñequeras">
+                    <div class="card-body">
+                        <h5 class="card-title">Antifaz y muñequeras</h5>
+                        <p class="card-text">El antifaz se sujeta con cinta elástica. Las muñequeras prenden con abrojos.</p>
+                        <p class="card-text">$850</p>
+                    </div>
+                </div>
+                
+                <div class="card container-fluid my-3">
+                    <img src="../../assets/img/Productos/Disfraces/Capa-Vincha1.jpg" class="card-img-top .ratio ratio-4x3" alt="Capa y vincha">
+                    <div class="card-body">
+                        <h5 class="card-title">Capa y vincha</h5>
+                        <p class="card-text">De tela doble, se prenden con broches a presión ( en tres tamaños). La vincha se prende con abrojo, acolchonada.</p>
+                        <p class="card-text">$1900</p>
+                    </div>
+                </div>
+
+                <div class="card container-fluid my-3">
+                    <img src="../../assets/img/Productos/Disfraces/Corona.jpeg" class="card-img-top .ratio ratio-4x3" alt="Corona">
+                    <div class="card-body">
+                        <h5 class="card-title">Corona</h5>
+                        <p class="card-text">La corona de prende con abrojo.</p>
+                        <p class="card-text">$950</p>
+                    </div>
+                </div>
+
+                <div class="card container-fluid my-3">
+                    <img src="../../assets/img/Productos/Disfraces/Varitas.jpeg" class="card-img-top .ratio ratio-4x3" alt="Varitas">
+                    <div class="card-body">
+                        <h5 class="card-title">Varita</h5>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, quasi.</p>
+                        <p class="card-text">$950</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer d-flex justify-content-between align-items-center">
+            <button type="button">CONTACTO</button>
+            <a href="https://www.instagram.com/encantosparachicos/" target="_blank"><button type="button">REDES</button></a>
+        </div>
+    </footer>
+
+    <script src mx-3="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous mx-3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>
