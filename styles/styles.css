@@ -27,28 +27,6 @@ body{
 
 /* -------------------------INDEX---------------------- */
 
-/* HEADER */
-.btnBuscar input{
-  border: 1px solid  #0ebdb7;
-  border-radius: 20px;
-  background-color: #FFFEEC;
-}
-
-.btnBuscar button{
-  border-radius: 20px;
-  background-color: #FFFEEC;
-}
-
-.itemsHeader a{
-  color: #0ebdb7 !important;
-  font-weight: bold;
-}
-
-.itemsHeader a:hover{
-  text-decoration: underline;
-  background-color: #FFFEEC;
-}
-
 /* MAIN */
 .containerMain {
   display: grid;
@@ -92,7 +70,7 @@ body{
 
 /* LINKS DEL NAV */
 .menuNavItem {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .menuNavItem a{
@@ -145,6 +123,9 @@ body{
   background-color: #FFFEEC;
   width: 100%;
   height: 100%;
+  color: #0ebdb7;
+  font-weight: bold;
+  padding-top: 15px;
 }
 
 /* BOTON */
@@ -182,12 +163,67 @@ body{
 /* GIFT */
 
 .giftUno{
-  grid-area: giftR;
+  grid-area: giftR1;
   text-align: center;
   align-self: center;
-  background-color: #FFFEEC;
-  width: 50%;
-  height: 90%;
+  width: 80%;
+}
+
+.giftUno img{
+  width: 80%;
+}
+
+.giftDos{
+  grid-area: giftR2;
+  text-align: center;
+  align-self: center;
+  width: 80%;
+}
+
+.giftDos img{
+  width: 80%;
+}
+
+.giftTres{
+  grid-area: giftR3;
+  text-align: center;
+  align-self: center;
+  width: 80%;
+}
+
+.giftTres img{
+  width: 80%;
+}
+
+.giftCuatro{
+  grid-area: giftR4;
+  text-align: center;
+  align-self: center;
+  width: 80%;
+}
+
+.giftCuatro img{
+  width: 80%;
+}
+
+.titleGift{
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.btnGift{
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #0ebdb7;
+  background-color: #0ebdb7;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.btnGift:hover{
+  transform: scale(1.1, 1.1);
 }
 
 /* NAVBAR REGALA */
@@ -199,18 +235,21 @@ body{
 .textRegala{
   grid-area: parrafoR;
   justify-self: center;
+  color: #0ebdb7;
+  font-weight: bold;
 }
 
 /* GRID REGALA */
 .containerRegala {
   display: grid;
   grid-template-areas:
-    ".. navR"
-    ".. titleR"
-    ".. giftR"
-    ".. parrafoR";
-  grid-template-columns: 1.6fr 4fr;
-  grid-template-rows: 0.5fr 0.5fr 2fr 0.5fr;
+    ".. navR navR"
+    ".. titleR titleR"
+    ".. parrafoR parrafoR"
+    ".. giftR1 giftR2"
+    ".. giftR3 giftR4";
+  grid-template-columns: 1.6fr 2fr 2fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 3.5fr 3.5fr;
 }
 
 /* -------------------------PRODUCTOS---------------------- */
@@ -494,30 +533,6 @@ details[open]{
     width: 35vw;
   }
 
-  .containerHeader{
-    display: grid !important;
-    grid-template-areas: 
-    ".. form" 
-    ".. items";
-  }
-
-  .btnBuscar{
-    grid-area: form;
-  }
-
-  .navPrincipal{
-    grid-area: items;
-  }
-
-  .itemsHeader{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .itemsHeader a{
-    margin-right: 10px;
-  }
-
   .containerIndex {
     display: grid;
     grid-template-areas:
@@ -528,13 +543,21 @@ details[open]{
     grid-template-rows: 1fr;
   }
 
+  .btnIndex button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .containerRegala {
     display: grid;
     grid-template-areas:
       "navR"
       "titleR"
-      "giftR"
-      "parrafoR";
+      "parrafoR"
+      "giftR1"
+      "giftR2"
+      "giftR3"
+      "giftR4"      ;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
@@ -585,30 +608,6 @@ details[open]{
     width: 35vw;
   }
 
-  .containerHeader{
-    display: grid !important;
-    grid-template-areas: 
-    ".. form" 
-    ".. items";
-  }
-
-  .btnBuscar{
-    grid-area: form;
-  }
-
-  .navPrincipal{
-    grid-area: items;
-  }
-
-  .itemsHeader{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .itemsHeader a{
-    margin-right: 10px;
-  }
-
   .containerIndex {
     display: grid;
     grid-template-areas:
@@ -619,13 +618,21 @@ details[open]{
     grid-template-rows: 1fr;
   }
 
+  .btnIndex button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   .containerRegala {
     display: grid;
     grid-template-areas:
-      "navR"
-      "titleR"
-      "giftR"
-      "parrafoR";
+    "navR"
+    "titleR"
+    "parrafoR"
+    "giftR1"
+    "giftR2"
+    "giftR3"
+    "giftR4";
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
