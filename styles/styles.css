@@ -4,6 +4,12 @@ body{
   background-color: #edebe5;
 }
 
+.nav-item a{
+  font-family: 'Righteous';
+  font-weight: 400 !important;
+  font-size: 15px;
+}
+
 .footer{
   width: 100%;
   height: 20vh;
