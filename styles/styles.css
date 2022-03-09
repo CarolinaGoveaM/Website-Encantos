@@ -94,7 +94,7 @@ body{
   display: flex;
   align-items: flex-start;
   grid-area: navI;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
 }
 
 .menuNavItems {
@@ -117,7 +117,8 @@ body{
     ".. textI"
     ".. btnI";
   grid-template-columns: 1.6fr 4fr;
-  grid-template-rows: 2fr 3fr 2fr;
+  /* grid-template-rows: 2fr 3fr 2fr; */
+  grid-row-gap: 20px;
 }
 
 /* PARRAFO */
@@ -153,6 +154,62 @@ body{
 
 .btnIndex button:hover{
   transform: scale(1.1, 1.1);
+}
+
+/* INDEX TALLER */
+
+/* GRID TALLER */
+.containerTaller {
+  display: grid;
+  grid-template-areas:
+    ".. titleTaller titleTaller"
+    ".. imgTaller1 imgTaller2"
+    ".. imgTaller3 imgTaller4";
+  grid-template-columns: 1.6fr 2fr 2fr;
+  justify-items: center;
+  grid-row-gap: 20px;
+}
+
+.titleTaller{
+  grid-area: titleTaller;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.imgTallerUno{
+  grid-area: imgTaller1;
+  text-align: center;
+}
+
+.imgTallerUno img{
+  width: 80%;
+}
+
+.imgTallerDos{
+  grid-area: imgTaller2;
+  text-align: center;
+}
+
+.imgTallerDos img{
+  width: 80%;
+}
+
+.imgTallerTres{
+  grid-area: imgTaller3;
+  text-align: center;
+}
+
+.imgTallerTres img{
+  width: 80%;
+}
+
+.imgTallerCuatro{
+  grid-area: imgTaller4;
+  text-align: center;
+}
+
+.imgTallerCuatro img{
+  width: 80%;
 }
 
 /* -------------------------REGALA---------------------- */
@@ -261,7 +318,7 @@ body{
     ".. giftR1 giftR2"
     ".. giftR3 giftR4";
   grid-template-columns: 1.6fr 2fr 2fr;
-  grid-template-rows: 0.5fr 0.5fr 0.5fr 3.5fr 3.5fr;
+  /* grid-template-rows: 0.5fr 0.5fr 0.5fr 3.5fr 3.5fr; */
 }
 
 /* -------------------------PRODUCTOS---------------------- */
@@ -560,6 +617,19 @@ details[open]{
     margin-bottom: 10px;
   }
 
+  .containerTaller {
+    display: grid;
+    grid-template-areas:
+      "titleTaller"
+      "imgTaller1"
+      "imgTaller2"
+      "imgTaller3"
+      "imgTaller4";
+    grid-template-columns: 2fr;
+    justify-items: center;
+    grid-row-gap: 20px;
+  }
+
   .containerRegala {
     display: grid;
     grid-template-areas:
@@ -633,6 +703,17 @@ details[open]{
   .btnIndex button{
     margin-top: 10px;
     margin-bottom: 10px;
+  }
+
+  .containerTaller {
+    display: grid;
+    grid-template-areas:
+      "titleTaller titleTaller"
+      "imgTaller1 imgTaller2"
+      "imgTaller3 imgTaller4";
+    grid-template-columns: 2fr 2fr;
+    justify-items: center;
+    grid-row-gap: 20px;
   }
 
   .containerRegala {
